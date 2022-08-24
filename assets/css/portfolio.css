@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Marizal Akbar</title>
+  </head>
+  <body onload="loadAnime()">
+    <div class="wrapper">
+      <header id="sticky">
+        <div class="navbar-logo">PascalApp</div>
+        <div class="navbar">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-home"></i> Beranda</a>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <main>
+      <section>
+        <div class="content">
+          <h1 class="center text-primary">Selamat Datang</h1>
+          <p>Di Website Pascal Class Enigma Batch 9</p>
+        </div>
+      </section>
+
+      <div class="container">
+        <center><h2>Data Anime</h2></center>
+        <div class="row" id="data-anime"></div>
+      </div>
+
+      <section id="about">
+        <h1>About Us</h1>
+        <div class="row-about">
+          <p class="container-about left">
+            <img src="https://www.enigmacamp.com/wp-content/uploads/2020/03/what_we_do_enigmacamp.png" alt="luffy" />
+          </p>
+          <div class="container-about right">
+            <p>
+              Didirikan pada tahun 2017, ENIGMA CAMP pada awalnya merupakan salah satu anak perusahaan PT. Square Techno Indonesia (STI) sampai di tahun 2019 berkembang menjadi sebuah perusahaan baru, PT. Enigma Cipta Humanika.
+              <br /><br />
+              Enigma Camp bergerak dalam bidang IT Bootcamp dan pengelolaan talent IT. Kami telah berkecimpung dalam bidang informasi teknologi sejak empat tahun terakhir dan daftar klien kami mencakup perusahaan ternama. Kami bekerja
+              berdasarkan pengalaman dalam mengembangkan software engineer yang dapat mendukung bisnis anda dengan 3 program utama, yaitu: Talent as a Service, Training as a Service dan Experienced Hiring.
+            </p>
+          </div>
+        </div>
+        <h3>Kami Memperkecil Kesenjangan Antara Lulusan SMA/SMK Dan Perguruan Tinggi Dengan Dunia Industri</h3>
+        <div class="row-about">
+          <div class="container-about left">
+            <p>
+              ENIGMA CAMP menggunakan pendekatan model Ready-to-Work yang dirancang secara khusus untuk memenuhi kekurangan tenaga kerja IT. Kami meyiapkan sumberdaya yang terampil untuk menduduki posisi sebagai junior developer dan SQA,
+              baik yang bekerja untuk sebuah perusahaan maupun sebagai karyawan outsourcing. Program training intensif kami diberikan secara penuh, 6 hari dalam seminggu, dengan durasi training antara 8 sampai 12 minggu.
+              <br />
+              <br />
+              Dengan berfokus pada kesiapan kerja dari program training intensif kami, proses penerimaan cenderung sangat selektif dan selama periode training, para peserta akan tinggal di rumah ENIGMA CAMP yang kami sediakan secara gratis
+              termasuk alat training, notebook, koneksi internet, makanan 3 kali sehari dan tidak akan dikenakan biaya apa pun.
+            </p>
+          </div>
+          <p class="container-about right">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/gGnj7VpxMI8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </p>
+        </div>
+
+        <div class="container-about left">
+          <div class="image-visi-misi">
+            <img src="https://www.enigmacamp.com/wp-content/uploads/2020/04/visi_enigmacamp.png" alt="" />
+            <h3 class="visi-misi">Visi Kami</h3>
+            <p>Memberikan dampak sosial yang positif melalui teknologi informasi dan pendidikan</p>
+          </div>
+          <div class="image-visi-misi">
+            <img src="https://www.enigmacamp.com/wp-content/uploads/2020/03/mission_enigmacamp-370x266.png" alt="" />
+            <h3 class="visi-misi">Misi Kami</h3>
+            <p>Kami memiliki misi untuk mengurangi kesenjangan antara lulusan SMA/SMK dan perguruan tinggi dengan dunia industri</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1>Hubungi Kami</h1>
+        <form>
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Masukan nama anda" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email <br /><input type="email" id="email" placeholder="Masukan email anda" /></label>
+          </div>
+          <div class="form-group">
+            <label for="pesan">
+              Pesan
+              <br />
+              <textarea name="pesan" id="pesan" cols="100px" rows="10" placeholder="Masukan pesan anda pada kami"></textarea>
+            </label>
+          </div>
+          <br />
+          <button type="submit" style="float: right">Simpan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="http://www.enigmacamp.com/wordpress-prod" target="_blank" rel="noopener noreferrer">Enigma Camp - IT Bootcamp</a>
+        &copy; 2022, All rights reserved
+      </p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
