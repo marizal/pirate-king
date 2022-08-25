@@ -1,9 +1,14 @@
+const anime = require("../../anime.json");
 function loadAnime() {
-  fetch("../../anime.json")
+  fetch(anime)
     .then((response) => response.json())
     .then((data) => {
-      const result = data.anime;
-      for (let i = 0; i < result.length - 1; i++) {
+      document.getElementById("data-anime").innerHTML = "";
+
+      const json = JSON.stringify(data.anime);
+      const result = JSON.parse(json);
+
+      for (let i = 0; i < result.length; i++) {
         document.getElementById("data-anime").innerHTML += `
           <div class="card">
           <img src="${result[i].img}" alt="Luffy">
